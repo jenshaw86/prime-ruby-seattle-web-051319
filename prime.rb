@@ -11,6 +11,7 @@ def prime?(num)
   
 # loop through range, check if num is divisible by any number, use num % number == 0 to check  
 # if divisible by number, return false
+# else, eliminate all other numbers in range that are divisible
 # after condition fails for all numbers, return true
 
     range.each do |el|
