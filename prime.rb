@@ -1,15 +1,15 @@
 def prime?(num)
-  # check if int is pos/neg
+  # check if num is pos/neg
   if num <= 1
     false
-  # check if int is equal to 2 or 3
+  # check if num is equal to 2 or 3
   elsif num == 2 || num == 3
     true
   else
 # range is inclusive of all numbers from 2 to num/2
-    range = (2..num/2).to_a
+    range = (2..Math.sqrt(num)).to_a
   
-# loop through range, check if num is divisible by any number, use num % number == 0 to check  
+# loop through range, check if num is divisible by any element, use num % element == 0 to check  
 # if divisible by number, return false
 # else, eliminate all other numbers in range that are divisible
 # after condition fails for all numbers, return true
