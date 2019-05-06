@@ -16,7 +16,7 @@ def prime?(num)
 
     range.each do |el|
       if num % el == 0 > num
-        false
+        return false
       else 
         range.delete_if{|other_el| other_el % el == 0}
       end
