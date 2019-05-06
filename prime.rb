@@ -14,7 +14,6 @@ def prime?(num)
 # after condition fails for all numbers, return true
 
     range.each do |el|
-      puts "current element is #{el}"
       if num % el == 0
         return false
       else 
