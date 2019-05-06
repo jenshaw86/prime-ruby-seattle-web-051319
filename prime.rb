@@ -1,4 +1,3 @@
-require 'pry'
 def prime?(num)
   # check if int is pos/neg
   if num <= 1
@@ -20,12 +19,8 @@ def prime?(num)
         return false
       else 
         range.delete_if{|other_el| other_el % el == 0}
-        puts range
-      binding.pry
       end
     end
     return true
   end
 end
-
-prime?(18899)
