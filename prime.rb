@@ -22,6 +22,5 @@ def prime?(num)
       end
       true if el**2 > num
     end
-    true
   end
 end
