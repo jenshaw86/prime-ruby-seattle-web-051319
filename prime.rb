@@ -20,7 +20,6 @@ def prime?(num)
       else 
         range.delete_if{|other_el| other_el % el == 0}
       end
-      return true if el**2 > num
     end
     return true
   end
