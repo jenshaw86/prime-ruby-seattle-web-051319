@@ -22,6 +22,7 @@ def prime?(num)
       end
       if el**2 > num
         return true
+      end
     end
   end
 end
