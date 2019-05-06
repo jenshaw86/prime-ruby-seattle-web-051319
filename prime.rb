@@ -15,7 +15,7 @@ def prime?(num)
 # after condition fails for all numbers, return true
 
     range.each do |el|
-      if num % el || el**2 > num == 0
+      if num % el == 0 || el**2 > num
         return false
       else 
         range.delete_if{|other_el| other_el % el == 0}
