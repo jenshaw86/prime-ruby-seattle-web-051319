@@ -7,7 +7,7 @@ def prime?(num)
     true
   else
 # range is inclusive of all numbers from 2 to num/2
-    range = (2..Math.sqrt(num).ceil).to_a
+    range = (2..num/2).to_a
   
 # loop through range, check if num is divisible by any element, use num % element == 0 to check  
 # if divisible by number, return false
