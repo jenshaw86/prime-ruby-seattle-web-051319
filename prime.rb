@@ -16,11 +16,11 @@ def prime?(num)
 
     range.each do |el|
       if num % el == 0 > num
-        return false
+        false
       else 
         range.delete_if{|other_el| other_el % el == 0}
       end
     end
-    return true
+    true
   end
 end
