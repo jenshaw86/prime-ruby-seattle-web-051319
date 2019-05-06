@@ -15,11 +15,12 @@ def prime?(num)
 # after condition fails for all numbers, return true
 
     range.each do |el|
-      if num % el == 0 || el**2 > num
+      if num % el == 0 > num
         return false
       else 
         range.delete_if{|other_el| other_el % el == 0}
       end
+      
     end
     return true
   end
